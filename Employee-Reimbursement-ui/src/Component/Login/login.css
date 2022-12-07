@@ -20,3 +20,6 @@ form{
 input{
   background-color: greenyellow;
 }
+#login-error{
+  color: red;
+}
