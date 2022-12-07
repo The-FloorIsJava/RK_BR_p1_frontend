@@ -1,0 +1,19 @@
+#header-container{
+    width: 1200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  
+}
+#header{
+    width: 500px;
+    border: thick double blue;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    
+}
+a{
+    padding: 5px;
+}
+
