@@ -1,5 +1,6 @@
 #header-container {
   width: 1200px;
+  height: 700px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -17,4 +18,12 @@ a {
 
 body {
   background-color: rgb(12, 10, 26);
+}
+
+#middle {
+  margin-top: 100px;
+}
+
+#bottom-border {
+  margin-top: 100px;
 }
