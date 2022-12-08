@@ -25,7 +25,7 @@ function login(form) {
 
       const reimbursementRedirect = document.createElement("p");
       reimbursementRedirect.innerHTML =
-        "<a id = redirect href = '../Reimbursements/reimbursements.html'>This is a paragraph</a>";
+        "<a id = redirect href = '../Reimbursements/reimbursements.html'>Goto Reimbursements!</a>";
       document.body.appendChild(reimbursementRedirect);
 
       //token authorization to be passed here
