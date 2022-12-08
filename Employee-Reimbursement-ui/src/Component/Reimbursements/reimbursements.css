@@ -5,7 +5,9 @@
   text-align: center;
   width: 1200px;
 }
-
+body {
+  background-color: rgb(12, 10, 26);
+}
 th {
   border: thin solid blanchedalmond;
   padding: 10px;
