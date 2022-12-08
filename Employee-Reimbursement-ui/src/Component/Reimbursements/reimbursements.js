@@ -26,7 +26,7 @@ async function getReimbursements() {
       console.log(table_filler);
     });
 
-    document.getElementById("reimbursement-table").innerHTML = table_filler;
+    document.getElementById("reimbursement-table").innerHTML += table_filler;
   } catch (error) {
     console.error(error);
   }
