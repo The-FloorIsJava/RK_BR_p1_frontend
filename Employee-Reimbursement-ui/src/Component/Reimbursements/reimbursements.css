@@ -15,12 +15,14 @@ button {
   background-color: blanchedalmond;
   border: none;
   color: white;
-  padding: 10px 10px;
+  padding: 5px 5px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
 }
-
+#username-title {
+  font-size: larger;
+}
 input {
   text-align: center;
 }
@@ -28,11 +30,8 @@ aside {
   display: flex;
   flex-flow: column;
   width: 200px;
-  height: 400px;
+  height: 125px;
   align-content: center;
   text-align: center;
-}
-
-#aside {
-  align-content: flex-start;
+  border: thick solid blanchedalmond;
 }

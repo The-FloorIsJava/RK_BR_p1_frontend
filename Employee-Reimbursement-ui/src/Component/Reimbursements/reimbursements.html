@@ -9,7 +9,7 @@
   </head>
   <body>
     <container id="reimbursement-container">
-      <table>
+      <table id="reimbursement-table">
         <thead>
           <tr>
             <th>Ticket ID</th>
@@ -24,16 +24,14 @@
     </container>
 
     <aside>
-      <aside id="aside">
-        <label for="eUsername">Employee Username</label><br />
-        <input
-          type="text"
-          id="eUsername"
-          name="eUsername"
-          placeholder="Enter Username Here"
-        /><br />
-        <button>Get Reimbursements</button>
-      </aside>
+      <label for="eUsername" id="username-title">Employee Username</label><br />
+      <input
+        type="text"
+        id="eUsername"
+        name="eUsername"
+        placeholder="Enter Username Here"
+      /><br />
+      <button id="get-reimbursements">Get Reimbursements</button>
     </aside>
 
     <script src="reimbursements.js"></script>
