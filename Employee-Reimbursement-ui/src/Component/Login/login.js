@@ -29,6 +29,10 @@ function login(form) {
       document.body.appendChild(reimbursementRedirect);
 
       //token authorization to be passed here
+      window.localStorage.setItem(
+        "token",
+        response.headers.get("Authorization")
+      );
     })
     .catch((error) => {
       console.error(error);
