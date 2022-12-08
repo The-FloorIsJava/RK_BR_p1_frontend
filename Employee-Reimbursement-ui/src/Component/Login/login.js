@@ -21,4 +21,4 @@ fetch(`${url}login`, {
     console.error(error);
     // <h1 id = "login-error">Incorrect Information</h1>
   });
->>>>>>> main
+
