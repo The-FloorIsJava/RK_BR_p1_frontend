@@ -20,13 +20,19 @@ function login(form) {
         throw new Error(response.text().then((body) => console.log(body)));
       }
       console.log(...response.headers);
-      loginText =
-        "<h3 id = 'login-success'>Successfully Logged In " +
-        username +
-        "</h3> <a href='../Reimburesments/reimbursements.html'>Reimbursements</a>";
+      const newHeader = document.getElementById("login-text");
+      newHeader.innerText = "Successful Login 😀";
+
+      const reimbursementRedirect = document.createElement("p");
+      reimbursementRedirect.innerHTML =
+        "<a id = redirect href = '../Reimbursements/reimbursements.html'>This is a paragraph</a>";
+      document.body.appendChild(reimbursementRedirect);
+
+      //token authorization to be passed here
     })
     .catch((error) => {
       console.error(error);
-      initialLogin = `<h1 id="login-error">Incorrect Information</h1>`;
+      const newHeader = document.getElementById("login-text");
+      newHeader.innerText = "Login Failed 😡";
     });
 }
