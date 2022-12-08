@@ -1,0 +1,22 @@
+#reimbursement-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  width: 1200px;
+}
+
+th {
+  border: thin solid blanchedalmond;
+  padding: 10px;
+}
+
+button {
+  background-color: blanchedalmond;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
