@@ -21,15 +21,23 @@ function login(form) {
         throw new Error(response.text().then((body) => console.log(body)));
       }
       console.log(...response.headers);
-      loginText =
-        "<h3 id = 'login-success'>Successfully Logged In " +
-        username +
-        "</h3> <a href='../Reimburesments/reimbursements.html'>Reimbursements</a>\
-        <a href='../Submit-Ticket/submit-ticket.html'>Submit a Ticket</a>";
-        document.getElementById("login-information").innerHTML = loginText;
+      const newHeader = document.getElementById("login-text");
+      newHeader.innerText = "Successful Login 😀";
+
+      const reimbursementRedirect = document.createElement("p");
+      reimbursementRedirect.innerHTML =
+        "<a id = redirect href = '../Reimbursements/reimbursements.html'>Goto Reimbursements!</a>";
+      document.body.appendChild(reimbursementRedirect);
+
+      //token authorization to be passed here
+      window.localStorage.setItem(
+        "token",
+        response.headers.get("Authorization")
+      );
     })
     .catch((error) => {
       console.error(error);
-      initialLogin = `<h1 id="login-error">Incorrect Information</h1>`;
+      const newHeader = document.getElementById("login-text");
+      newHeader.innerText = "Login Failed 😡";
     });
 }

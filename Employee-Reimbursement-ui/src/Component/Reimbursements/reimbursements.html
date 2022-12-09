@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reinmbursments</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reimbursements 💰</title>
+    <link rel="stylesheet" type="text/css" href="reimbursements.css" />
+  </head>
+  <body>
+    <container id="reimbursement-container">
+      <table id="reimbursement-table">
+        <thead>
+          <tr>
+            <th>Ticket ID</th>
+            <th>Username</th>
+            <th>Submission Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+      </table>
+    </container>
+
+    <aside>
+      <label for="eUsername" id="username-title">Employee Username</label><br />
+      <input
+        type="text"
+        id="eUsername"
+        name="eUsername"
+        placeholder="Enter Username Here"
+      /><br />
+      <button id="get-reimbursements">Get Reimbursements</button>
+    </aside>
+
+    <script src="reimbursements.js"></script>
+  </body>
 </html>
