@@ -24,7 +24,9 @@ function login(form) {
       loginText =
         "<h3 id = 'login-success'>Successfully Logged In " +
         username +
-        "</h3> <a href='../Reimburesments/reimbursements.html'>Reimbursements</a>";
+        "</h3> <a href='../Reimburesments/reimbursements.html'>Reimbursements</a>\
+        <a href='../Submit-Ticket/submit-ticket.html'>Submit a Ticket</a>";
+        document.getElementById("login-information").innerHTML = loginText;
     })
     .catch((error) => {
       console.error(error);
