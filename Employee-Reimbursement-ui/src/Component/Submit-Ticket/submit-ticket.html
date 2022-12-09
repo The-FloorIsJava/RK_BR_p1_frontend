@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <input
+            type="text"
+            name="description"
+            placeholder="description"
+            value=""
+        />
+        <input
+            type="text"
+            name="amount"
+            placeholder="amount"
+            value=""
+            
+        />
+        <input
+            type="button"
+            name="Submit ticket"
+            value="Submit"
+            onclick="submitTicket(this.form)"
+          />
+    </form>
+
+    <script src="submit-ticket.js"></script>
 </body>
 </html>
