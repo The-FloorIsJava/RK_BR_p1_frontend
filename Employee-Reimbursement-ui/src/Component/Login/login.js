@@ -1,4 +1,3 @@
-
 let initialLogin = document.getElementById("login-container").innerHTML;
 let loginText = document.getElementById("login-text").innerHTML;
 const url = "http://localhost:8080/";
@@ -26,7 +25,7 @@ function login(form) {
 
       const reimbursementRedirect = document.createElement("p");
       reimbursementRedirect.innerHTML =
-        "<a id = redirect href = '../Reimbursements/reimbursements.html'>Goto Reimbursements!</a>";
+        "<a href = '../Reimbursements/reimbursements.html'>Goto Reimbursements!</a><br/><a href = '../Submit-Ticket/submit-ticket.html'>Submit Tickets!</a>";
       document.body.appendChild(reimbursementRedirect);
 
       //token authorization to be passed here
